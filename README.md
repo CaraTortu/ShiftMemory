@@ -13,7 +13,7 @@ As we can see in the following photo, we start with a state of 8 low bits. Then 
 
 We are going to be using an arduino microcontroller to automatically follow the process of turning the data, clock and latch clock low (0v) and high (5v).
 
-In the following diagram we can see that we tie the VCC pin of the 74HC595 to 5v and GND pin to ground. The 8 outputs of the registers are tied to LEDs so we can see what data is set in the registers. We are using red LEDs which use 2v and draw 15mA, so using Ohm's law we can calculate the resistor value to achieve 2v since our input voltage in the circuit is 5v. 
+In the following diagram we can see that we tie the VCC pin of the 74HC595 to 5v and GND pin to ground. The 8 outputs of the registers are tied to LEDs so we can see what data is set in the registers. We are using red LEDs which use 2v and draw 15mA, so using Ohm's law (https://en.wikipedia.org/wiki/Ohm%27s_law) we can calculate the resistor value to achieve 2v since our input voltage in the circuit is 5v. 
 
 Using the formula ```(Source Volts - LED Volts) / (Current / 1000) = Resistance``` (Dividing by 1000 because we are using mA), we can obtain that our resistor value needed is 120ohms. Since they don't make 120ohm resistors, we will use 100ohm resistors.
 
